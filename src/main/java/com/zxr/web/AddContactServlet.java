@@ -26,6 +26,8 @@ public class AddContactServlet extends HttpServlet {
         }
         ContactService cs=new ContactServiceImpl();
         cs.add(contact);
+
+        int i=1;
         response.sendRedirect("query_contact_page");
     }
 
